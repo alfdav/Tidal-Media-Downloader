@@ -8,7 +8,7 @@ body:
       value: |
         Please search for this issue in issues-page first. Avoid duplication.
         Please read Wiki first.
-        https://github.com/yaronzz/Tidal-Media-Downloader/wiki
+        https://github.com/alfdav/Tidal-Media-Downloader/wiki
   - type: textarea
     id: which-tool
     attributes:
