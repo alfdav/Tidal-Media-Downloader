@@ -324,7 +324,7 @@ Metadata written to all downloaded files (FLAC, MP3, MP4):
 - Track number / total, disc number / total
 - Release date, ISRC, copyright, composer
 - Cover art (embedded)
-- Compilation flag (playlist tracks are automatically marked as compilations with album artist set to "Various Artists")
+- Compilation flag (playlist tracks are automatically marked as compilations with album artist set to "Various Artists" and album name set to the playlist name)
 - Synced and unsynced lyrics (when `lyrics_embed = true`)
 - BPM, initial key (Camelot notation), replay gain
 - UPC (album barcode), Tidal share URL
@@ -348,7 +348,7 @@ FLAC Vorbis Comment: `COMPILATION` tag.
 - **Dual download sources** — Hi-Fi API (public proxy, stateless) handles both metadata and streaming by default; OAuth serves as an automatic fallback
 - **Hi-Fi API instance rotation** — auto-discovers live instances from uptime trackers; dead instances are quarantined and skipped automatically
 - **Playlist import** — import from Spotify, Apple Music, or any platform via CSV/TSV or `Artist - Title` text files
-- **Playlist compilation recognition** — playlist tracks are automatically tagged as compilations (FLAC `COMPILATION`, MP3 `TCMP`, MP4 `cpil`) with album artist set to "Various Artists", and an M3U file is always generated; music players correctly group the folder as a compilation
+- **Playlist compilation recognition** — playlist tracks are automatically tagged as compilations (FLAC `COMPILATION`, MP3 `TCMP`, MP4 `cpil`) with album artist set to "Various Artists" and album name set to the playlist name; an M3U file and `poster.jpg` cover are always generated; music players like Plex/Plexamp correctly group the folder as a single compilation entry
 - **Multi-disc M3U** — when `playlist_create = true`, a single consolidated M3U is written at the album root with relative paths; works correctly across multi-disc albums
 - **Download checkpointing** — interrupted collection downloads can resume from where they left off
 - **API response caching** — in-memory TTL cache reduces redundant HTTP calls during a session

@@ -9,6 +9,8 @@ pip install git+https://github.com/alfdav/Tidal-Media-Downloader.git#subdirector
 **Playlist Compilation Recognition**
 - Playlist tracks are now automatically tagged as compilations: FLAC (`COMPILATION`), MP3 (`TCMP`), MP4 (`cpil`)
 - Album artist is set to "Various Artists" for playlist tracks so music players group them correctly
+- Album name in metadata is overridden with the playlist name, so all tracks appear under one album entry in music players (Plex, Plexamp, etc.)
+- Playlist cover art is saved as `poster.jpg` in the playlist folder for Plex/Plexamp thumbnail recognition
 - M3U playlist file is now always generated for playlist downloads (regardless of `playlist_create` setting)
 - Albums and mixes still respect the `playlist_create` setting for M3U generation
 
